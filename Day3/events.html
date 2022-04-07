@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Day 3</title>
+  </head>
+  <body onresize="hello()"  onkeypress="hello()" style="text-align: center">
+    
+    <script>
+        let a =1
+        function add(){
+              console.log( a =a+1)
+        }
+        function hello(){
+            alert("Welcome to Js Training")
+        }
+    </script>
+
+    <h5>on-click event</h5>
+    <button onclick="add()">on click me</button>
+    <h5>on-double-click event</h5>
+    <button ondblclick="hello()">on double click me</button>
+    <h5>on-right-click event</h5>
+    <button oncontextmenu="hello()">on right click me</button>
+    <h5>on-mouse-hover event</h5>
+    <button onmouseenter="hello()">on mouse hover me</button>
+    <h5>on-mouse-out event</h5>
+    <button onmouseout="hello()">on mouse out me</button>
+    <h5>on-mouse-up event</h5>
+    <button onmouseup="hello()">on mouse up me</button>
+ 
+  </body>
+</html>

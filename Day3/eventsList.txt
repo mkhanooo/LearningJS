@@ -1,0 +1,15 @@
+These are the following events in Javascript:
+
+1.  Click  (onclick)
+2.  double-click (ondblclick)
+3.  Right-click (oncontextmenu)
+4.  Mouse-hover (onmousenter)
+5.  Mouse-out (onmouseout)
+6.  Mouse-down (onmousedown)
+7.  Mouse-up (onmouseup)
+8.  Key-press (onkeypress)
+10. Key-up (onkeyup)
+11. Load (onload)
+12. Unload (onunload)
+13. Resize (onresize)
+14. Scroll (onscroll)
