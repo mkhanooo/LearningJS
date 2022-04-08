@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js day 4</title>
+  </head>
+  <body>
+    <h4>Number method and properties</h4>
+    <script>
+      let x = 2;
+      document.write((s = x.toString()));
+      document.write("<br>" + typeof s);
+
+      let y = 23.45343;
+      document.write("<br>" + y + "  into exponent  " + y.toExponential(2));
+      document.write("<br>" + y + "  into fixed  " + y.toFixed(1));
+      document.write("<br>" + y + "  into string  " + y.toString());
+      document.write("<br>" + y + "  into precision  " + y.toPrecision(2));
+      document.write("<br>" + y + "  into value  " + y.valueOf());
+      document.write("<br>" + "Number method");
+      document.write(
+        "<br>" +
+          Number(true) +
+          "<br>" +
+          Number(false) +
+          "<br>" +
+          Number("10") +
+          "<br>" +
+          Number("  10") +
+          "<br>" +
+          Number("10  ") +
+          "<br>" +
+          Number(" 10  ") +
+          "<br>" +
+          Number("10.33") +
+          "<br>" +
+          Number("10,33") +
+          "<br>" +
+          Number("10 33") +
+          "<br>" +
+          Number("John")
+      );
+      document.write("<br>" + "parseInt method" + "<br>");
+      document.write(
+        parseInt("-10") +
+          "<br>" +
+          parseInt("-10.33") +
+          "<br>" +
+          parseInt("10") +
+          "<br>" +
+          parseInt("10.33") +
+          "<br>" +
+          parseInt("10 6") +
+          "<br>" +
+          parseInt("10 years") +
+          "<br>" +
+          parseInt("years 10")
+      );
+      document.write("<br>" + "parseFloat method" + "<br>");
+      document.write(
+        parseFloat("-10") +
+          "<br>" +
+          parseFloat("-10.33") +
+          "<br>" +
+          parseFloat("10") +
+          "<br>" +
+          parseFloat("10.33") +
+          "<br>" +
+          parseFloat("10 6") +
+          "<br>" +
+          parseFloat("10 years") +
+          "<br>" +
+          parseFloat("years 10")
+      );
+      document.write("<br>" + "Min and Max Number" + "<br>");
+      let a = Number.MAX_VALUE;
+      let b = Number.MIN_VALUE;
+      document.write(a + "<br>" + b);
+      document.write("<br>" + "+ve infinity and -ve infinity  method");
+      let c = Number.POSITIVE_INFINITY;
+      let d = Number.NEGATIVE_INFINITY;
+      document.write("<br>" + c + "<br>" + d);
+      document.write("<br>" + "number prototype" + "<br>");
+      Number.prototype.myMethod = function () {
+        return this.valueOf() / 2;
+      };
+      let n = 55;
+      document.write(n.myMethod());
+    </script>
+  </body>
+</html>
