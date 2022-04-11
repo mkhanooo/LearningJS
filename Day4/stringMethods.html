@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js day 4</title>
+  </head>
+  <body>
+    <h4>String methods</h4>
+    <p id="str"></p>
+    <script>
+      let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      document.getElementById("str").innerHTML = text.length;
+        document.getElementById("str").innerHTML += "<br>" + text.toUpperCase();
+        document.getElementById("str").innerHTML += "<br>" + text.toLowerCase();
+        document.getElementById("str").innerHTML += "<br>" + text.charAt(25);
+        document.getElementById("str").innerHTML += "<br>" + text.charCodeAt(4);  
+        document.getElementById("str").innerHTML += "<br>" + text.charAt(text.length - 1);
+        document.getElementById("str").innerHTML += "<br>" + text.indexOf("E");
+        document.getElementById("str").innerHTML += "<br>" + text.indexOf("E", 15);
+        document.getElementById("str").innerHTML += "<br>" + text.lastIndexOf("E");
+        document.getElementById("str").innerHTML += "<br>" + text.lastIndexOf("E", 15);
+        document.getElementById("str").innerHTML += "<br>" + text.substring(0, 5);
+        document.getElementById("str").innerHTML += "<br>" + text.substring(5, 10);
+        document.getElementById("str").innerHTML += "<br>" + text.substring(5);
+        document.getElementById("str").innerHTML += "<br>" + text.slice(0, 5);
+        document.getElementById("str").innerHTML += "<br>" + text.slice(5, 10);
+        document.getElementById("str").innerHTML += "<br>" + text.slice(5);
+        document.getElementById("str").innerHTML += "<br>" + text.replace("E", "e");
+        document.getElementById("str").innerHTML += "<br>" + text.replace(/E/g, "e");
+        document.getElementById("str").innerHTML += "<br>" + text.split("");
+        document.getElementById("str").innerHTML += "<br>" + text.split("", 5);
+        document.getElementById("str").innerHTML += "<br>" + text.split("", 5).join("-");
+        document.getElementById("str").innerHTML += "<br>" + text.trim();
+
+    </script>
+  </body>
+</html>

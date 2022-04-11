@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js day 4</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h4>Boolean</h4>
+    <p id="bool"></p>
     <script>
-        
+      let text = "Hello World!";
+      let result = text.valueOf();
+      document.getElementById("bool").innerHTML =
+        "100 is " +
+        Boolean(100) +
+        "<br>" +
+        "3.14 is " +
+        Boolean(3.14) +
+        "<br>" +
+        "-15 is " +
+        Boolean(-15) +
+        "<br>" +
+        "Any (not empty) string is " +
+        Boolean("Hello") +
+        "<br>" +
+        "Even the string 'false' is " +
+        Boolean("false") +
+        "<br>" +
+        "Any expression (except zero) is " +
+        Boolean(1 + 7 + 3.14) +
+        "<br>" +
+        "to source() is deprecated, use toString()" +
+        "<br>" +
+        "valueOf() returns the primitive value of a string:" +
+        "<br>" +
+        result +
+        "<br>" +
+        "The valueOf() method returns the primitive value of a string:" +
+        "<br>" +
+        "The valueOf() method does not change the original string" +
+        "<br>" +
+        "The valueOf() method can be used to convert a string object into a string.";
     </script>
-</body>
+  </body>
 </html>
