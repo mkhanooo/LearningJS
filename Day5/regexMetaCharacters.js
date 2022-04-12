@@ -1,0 +1,31 @@
+let regex = /\w/g; // \w matches any word character
+regex = /\W/g; // \W matches any non-word character
+regex = /\d/g; // \d matches any digit
+regex = /\D/g; // \D matches any non-digit
+regex = /\s/g; // \s matches any whitespace character
+regex = /\S/g; // \S matches any non-whitespace character
+regex = /\bLO/; // \b matches the word boundary
+regex = /\BLO/; // \B matches the non-word boundary
+regex = /\0/; // \0 matches the null character
+regex =  /\n/; // \n matches the newline character
+regex = /\f/; // \f matches the form feed character
+regex = /\r/; // \r matches the carriage return character
+regex = /\t/; // \t matches the tab character
+regex = /\v/; // \v matches the vertical tab character
+regex = /\x41/; // \x matches the character with the hexadecimal value
+regex = /\u0041/; // \u matches the character with the Unicode value
+let str = "Give 100%!";
+str = "Is this all there is?";
+str = "HELLO, LOOK AT YOU";
+str = "Visit mdkhan youtube.\0Learn Javascript.";
+str = "Visit mdkhan youtube.\nLearn JavaScript."
+str = "Visit mdkhan youtube.\fLearn JavaScript."
+str = "Visit mdkhan youtube.\rLearn JavaScript."
+str = "Visit mdkhan youtube.\tLearn JavaScript."
+str = "Visit mdkhan youtube.\vLearn JavaScript."
+str = "Visit mdkhan youtube.\x41Learn JavaScript."
+str = "Visit mdkhan youtube.\u0041Learn JavaScript."
+// let result = str.match(regex);
+let result = str.search(regex);
+
+console.log(result);

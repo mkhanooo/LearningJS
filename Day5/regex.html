@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Js Regular Expressions</h2>
+
+<p>Do a case-insensitive search for "Khan" in a string:</p>
+
+<p id="regex"></p>
+
+<script>
+let text = "My name is Khan Im not terrorist";
+let pattern = /Khan/i;
+let result = text.match(pattern);
+
+document.getElementById("regex").innerHTML = result;
+</script>
+
+</body>
+</html>

@@ -1,10 +1,7 @@
 // let array = [10,20,30,40,50];
-// array.unshift(0);
-// console.log(array);
-// array.push(60);
-// console.log(array);
-// array.shift();
-// console.log(array);
+// console.log(array.unshift(0));
+// console.log( array.push(60));
+// console.log(array.shift());
 
 let array = [10,20,30,40,50];
 // let index = array.indexOf(30);
