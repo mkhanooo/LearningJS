@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Day 6</title>
+  </head>
+  <body>
+    <h4>JavaScript Inheritance</h4>
+    <script>
+      class employee {
+        constructor(name, age, salary) {
+          this.name = name;
+          this.age = age;
+          this.salary = salary;
+        }
+        info() {
+          document.write(
+            `<br>Employee Class <br> Name: ${this.name}<br> Age: ${this.age}<br> Salary: ${this.salary}`
+          );
+        }
+      }
+      class manager extends employee {
+        info() {
+          let ta = 1000;
+          let pa = 500;
+          let totalsal = this.salary + ta + pa;
+          document.write(
+            `Manager Class <br>Name: ${this.name}<br> Age: ${this.age}<br> Salary: ${totalsal}<br>`
+          );
+        }
+      }
+      let a = new manager("MD Khan", 24, 2000);
+      let b = new employee("Ahmad Khan", 29, 5000);
+
+      a.info();
+      b.info();
+    </script>
+  </body>
+</html>

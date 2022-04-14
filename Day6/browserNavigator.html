@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Navigator</title>
+</head>
+<body>
+    <script>
+        let x = window.navigator.appCodeName; //Mozilla
+        document.write("appCodeName Navigator ",'"',x,'"');
+        x = window.navigator.appName; // Browser name
+        document.write("<br>appName Navigator ",'"',x,'"');
+        x = window.navigator.appVersion; // Browser version
+        document.write("<br>appVersion Navigator ",'"',x,'"');
+        x = window.navigator.cookieEnabled; // Cookie enabled
+        document.write("<br>cookieEnabled Navigator ",'"',x,'"');
+    
+        x = window.navigator.userAgent; // User agent
+        document.write("<br>userAgent Navigator ",'"',x,'"');
+        x = window.navigator.language;  // Language
+        document.write("<br>language Navigator ",'"',x,'"');
+        x = window.navigator.onLine; // Online status
+        document.write("<br>onLine Navigator ",'"',x,'"');
+        x = window.navigator.maxTouchPoints;// Max touch points
+        document.write("<br>maxTouchPoints Navigator ",'"',x,'"');
+        x = window.navigator.platform; // Platform
+        document.write("<br>platform Navigator ",'"',x,'"');
+        x = window.navigator.product; // Product
+        document.write("<br>product Navigator ",'"',x,'"');
+        x = window.navigator.productSub; // Product sub
+        document.write("<br>productSub Navigator ",'"',x,'"');
+        x = window.navigator.vendor; // Vendor
+        document.write("<br>vendor Navigator ",'"',x,'"');
+        x = window.navigator.vendorSub; // Vendor sub
+        document.write("<br>vendorSub Navigator ",'"',x,'"');
+        x = window.navigator.geolocation; // Geolocation
+        document.write("<br>geolocation Navigator ",'"',x,'"');
+        x = window.navigator.javaEnabled(); // Java enabled
+        document.write("<br>javaEnabled Navigator ",'"',x,'"');
+    </script>
+</body>
+</html>
